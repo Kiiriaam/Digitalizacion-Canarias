@@ -3,62 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digitalización en Canarias | Desarrollo Web para Negocios Locales</title>
+    <title>Digitalización Canarias | Páginas Web Express</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Fuente moderna -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- NAV / CABECERA -->
+    <!-- HEADER -->
     <header>
-        <div class="container">
-            <h1 class="logo">Digitalización <span>Canarias</span></h1>
-            <a href="tel:+34622274491" class="btn-nav">📞 Llamar Directamente</a>
+        <div class="container nav-container">
+            <a href="#" class="logo">⚡ Digitalización<span>Canarias</span></a>
+            <nav class="desktop-nav">
+                <a href="#agencia" class="nav-link">Sobre Nosotros</a>
+                <a href="#plantillas" class="nav-link">Sectores</a>
+                <a href="#servicios" class="nav-link">Tarifas</a>
+            </nav>
+            <a href="#contacto" class="btn-contacto">Hablemos</a>
         </div>
     </header>
 
     <!-- HERO SECTION -->
     <section class="hero">
-        <div class="container text-center">
-            <h2>Digitaliza tu negocio local en Tenerife. <br><span>Adiós a la agenda de papel.</span></h2>
-            <p>Creamos tu página web con sistema de reservas automático por WhatsApp y organizamos tus clientes con bases de datos internas. Todo por un pago único y sin mensualidades.</p>
-            <div class="hero-buttons">
-                <a href="#servicios" class="btn-primary">Ver Packs y Precios</a>
-                <a href="#sobre-nosotros" class="btn-secondary">Sobre la Agencia</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- SOBRE LA AGENCIA / DESCRIPCIÓN -->
-    <section id="sobre-nosotros" class="about-section">
         <div class="container">
-            <h3 class="section-title">Sobre la Agencia</h3>
-            <div class="about-content text-center">
-                <p>En <strong>Digitalización en Canarias</strong> nacemos con un objetivo claro: ayudar a los pequeños comercios, autónomos y negocios de proximidad en la isla a dar el salto al mundo digital sin complicaciones técnicas ni tarifas mensuales abusivas.</p>
-                <p>Nos especializamos en construir soluciones a medida para sectores de estética, peluquería, salud y servicios locales en Tenerife. Diseñamos páginas web dinámicas combinadas con la robustez de <strong>Bases de Datos (SQL)</strong>, permitiendo optimizar el control de las citas, agilizar la comunicación con los clientes a través de WhatsApp y eliminar definitivamente las notas sueltas en papel.</p>
+            <h2>Páginas Web Profesionales<br><span>Para tu Negocio Local</span></h2>
+            <p>Lleva tu barbería, centro de estética o comercio en Tenerife al siguiente nivel. Creamos tu web express optimizada para móviles y automatizada con tu WhatsApp.</p>
+            <div class="hero-btns">
+                <a href="#plantillas" class="btn-primary">Ver Modelos Reales</a>
+                <a href="#agencia" class="btn-secondary">Conócenos Primero</a>
             </div>
         </div>
     </section>
 
-    <!-- FORMULARIO DE NOMBRE COMPARTIDO (Para personalizar los mensajes) -->
-    <section class="name-step-section">
-        <div class="container text-center">
-            <div class="name-box">
-                <label for="client-name">👉 Para empezar, introduce tu nombre o el de tu negocio:</label>
-                <input type="text" id="client-name" placeholder="Ej. Juan de Barbería Tomás" oninput="actualizarEnlaces()">
+    <!-- SOBRE LA AGENCIA (NUEVA SECCIÓN DE CONFIANZA) -->
+    <section id="agencia" class="about-section">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h3>No pagues nada sin estar <br><span>100% seguro</span></h3>
+                <p>En <strong>Digitalización Canarias</strong> sabemos que dar el salto a internet puede generar dudas. Por eso, nuestro enfoque es distinto: somos desarrolladores locales y nos gusta hacer las cosas cara a cara (o voz a voz).</p>
+                <p>Antes de que inviertas un solo euro, nos sentamos a hablar contigo. Analizamos tu negocio, resolvemos todas tus dudas técnicas y personalizamos tus preferencias al milímetro. Solo empezamos a trabajar cuando tienes claro que nuestra solución es exactamente lo que necesitas para conseguir más clientes.</p>
+                <ul class="about-features">
+                    <li>✔️ Asesoramiento previo 100% gratuito.</li>
+                    <li>✔️ Trato humano, sin tecnicismos ni letra pequeña.</li>
+                    <li>✔️ Diseños a medida para tu sector en Canarias.</li>
+                </ul>
+            </div>
+            <div class="about-visual">
+                <div class="trust-badge">
+                    <div class="icon">🤝</div>
+                    <h4>Compromiso Local</h4>
+                    <p>Desarrollado con dedicación desde Tenerife para impulsar los comercios de las islas.</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- DEMOSTRACIONES POR SECTORES -->
+    <section id="plantillas" class="portfolio-section">
+        <div class="container">
+            <h3>Demostraciones por Sectores</h3>
+            <p class="portfolio-subtitle">Haz clic en el sector de tu interés para ver cómo luciría la web de tu negocio en tiempo real.</p>
+            
+            <div class="grid-portfolio">
+                
+                <!-- Barbería / Peluquería -->
+                <div class="portfolio-card">
+                    <div>
+                        <div class="portfolio-icon">💈</div>
+                        <h4>Barbería & Peluquería</h4>
+                        <p>Diseño rústico, elegante y enfocado en la reserva inmediata de cortes y servicios de estética masculina.</p>
+                    </div>
+                    <a href="https://kiiriaam.github.io/Barberia-Demo/" target="_blank" class="btn-demo">Ver Modelo Real ↗</a>
+                </div>
+
+                <!-- Estética y Uñas -->
+                <div class="portfolio-card">
+                    <div>
+                        <div class="portfolio-icon">💅</div>
+                        <h4>Salón de Estética & Uñas</h4>
+                        <p>Modo oscuro prémium con destellos rosa neón. Ideal para captar clientes visuales de manicura y tratamientos.</p>
+                    </div>
+                    <a href="https://kiiriaam.github.io/Modelo-Est-tica-y-u-as/" target="_blank" class="btn-demo">Ver Modelo Real ↗</a>
+                </div>
+
+                <!-- Fisioterapia / Salud -->
+                <div class="portfolio-card">
+                    <div>
+                        <div class="portfolio-icon">🩺</div>
+                        <h4>Fisioterapia & Salud</h4>
+                        <p>Estilo clínico de alta gama en tonos menta y pizarra. Transmite higiene, profesionalidad y agilidad en citas médicas.</p>
+                    </div>
+                    <a href="https://kiiriaam.github.io/Sector-Salud/" target="_blank" class="btn-demo">Ver Modelo Real ↗</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ESPACIO PARA FUTURAS RESEÑAS O ESTADÍSTICAS -->
+    <!-- 
+    <section id="resenas" class="reviews-section">
+        [Aquí añadiremos los comentarios de tus clientes cuando vayas cerrando ventas]
+    </section> 
+    -->
 
     <!-- SERVICIOS / PRECIOS -->
     <section id="servicios" class="services">
         <div class="container">
             <h3 class="section-title">Nuestros Packs Express</h3>
             <div class="grid-services">
-                <!-- Pack Web -->
+                
+                <!-- Pack Web Autónomo -->
                 <div class="card">
                     <h4>Pack Web Autónomo</h4>
                     <div class="price">200€<span>/ pago único</span></div>
@@ -69,10 +122,10 @@
                         <li>🌐 Hosting gratuito (0€ cuotas mensuales)</li>
                         <li>🛠️ 12 meses de soporte técnico incluidos</li>
                     </ul>
-                    <button onclick="enviarWhatsApp('Pack Web Autónomo de 120€')" class="btn-card-action">Solicitar Pack Web</button>
+                    <button onclick="enviarWhatsApp('Pack Web Autónomo de 200€')" class="btn-card-action">Solicitar Pack Web</button>
                 </div>
 
-                <!-- Pack Web + SQL -->
+                <!-- Pack Digital Completo -->
                 <div class="card premium">
                     <div class="badge">Recomendado</div>
                     <h4>Pack Digital Completo</h4>
@@ -84,62 +137,45 @@
                         <li>📉 Mayor control de facturación y organización interna</li>
                         <li>🛠️ 12 meses de soporte técnico incluidos</li>
                     </ul>
-                    <button onclick="enviarWhatsApp('Pack Digital Completo de 150€')" class="btn-card-premium-action">Digitalizar mi Negocio</button>
+                    <button onclick="enviarWhatsApp('Pack Digital Completo de 250€')" class="btn-card-premium-action">Digitalizar mi Negocio</button>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- PORTAFOLIO -->
-    <section id="portafolio" class="portfolio">
-        <div class="container text-center">
-            <h3 class="section-title">Trabajo Real de Kilómetro 0</h3>
-            <p>Aquí tienes una demostración en vivo de un sistema interactivo de reservas automático que hemos desarrollado:</p>
-            <div class="portfolio-item">
-                <h5>Barbería Tomás (Demo Web de Reservas)</h5>
-                <a href="https://kiiriaam.github.io/BarberiaTomas/" target="_blank" class="btn-secondary">Probar Demo Interactiva 🚀</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACTAR & LLAMADA -->
+    <!-- SECCIÓN DE CONTACTO FINAL (NUEVA) -->
     <section id="contacto" class="contact-section">
-        <div class="container text-center">
-            <h3 class="section-title">¿Hablamos de tú a tú? Sin rodeos ni estafas</h3>
-            <div class="trust-box">
-                <p>Sé perfectamente que internet está lleno de promesas falsas y servicios fantasma. <strong>Por eso, yo doy la cara.</strong></p>
-                <p>Estoy totalmente disponible para <strong>hacer una llamada telefónica con una explicación verbal completa</strong>. Hablaremos directamente de las exigencias de tu negocio, de cómo quieres exactamente tu web y resolveremos cualquier duda antes de que pagues un solo céntimo.</p>
-            </div>
-            <div class="contact-buttons">
-                <button onclick="enviarWhatsApp('Consulta General / Propuesta Personalizada')" class="btn-whatsapp-large">💬 Enviar WhatsApp personalizado</button>
-                <a href="tel:+34622274491" class="btn-call-large">📞 Llamar por teléfono ahora</a>
+        <div class="container">
+            <div class="contact-box">
+                <h3>¿Listo para dar el paso? Hablemos.</h3>
+                <p>Si tienes dudas o quieres comentarnos tu idea, llámanos directamente o escríbenos por WhatsApp. Sin compromisos, estamos aquí para asesorarte.</p>
+                
+                <div class="contact-methods">
+                    <a href="tel:+34622274491" class="btn-call">
+                        📞 Llamar al +34 622 274 491
+                    </a>
+                    <a href="https://wa.me/34622274491?text=Hola,%20me%20gustar%C3%ADa%20hacer%20una%20consulta%20sobre%20una%20p%C3%A1gina%20web" target="_blank" class="btn-wa">
+                        💬 Enviar un WhatsApp
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <div class="container text-center">
-            <p>&copy; 2026 Digitalización en Canarias. Desarrollado con pasión en Tenerife.</p>
+        <div class="container">
+            <p>&copy; 2026 Digitalización Canarias. Desarrollado en Tenerife, Islas Canarias.</p>
         </div>
     </footer>
 
-    <!-- LÓGICA EN JAVASCRIPT PARA EL NOMBRE Y WHATSAPP -->
+    <!-- INTERACCIÓN WHATSAPP -->
     <script>
         function enviarWhatsApp(pack) {
-            const nombreInput = document.getElementById('client-name').value.trim();
-            const numeroTel = "34622274491";
-            
-            let mensaje = "";
-            
-            if (nombreInput !== "") {
-                mensaje = `Hola Kiriam! Mi nombre es ${nombreInput}. Estoy interesado en el ${pack} y me gustaría que me llamaras para explicarme los detalles verbalmente y hablar de las exigencias de mi web.`;
-            } else {
-                mensaje = `Hola Kiriam! Estoy interesado en el ${pack} y me gustaría que me llamaras para explicarme los detalles verbalmente y hablar de las exigencias de mi web.`;
-            }
-            
-            const urlFormat = `https://wa.me/${numeroTel}?text=${encodeURIComponent(mensaje)}`;
-            window.open(urlFormat, '_blank');
+            const telefono = "34622274491"; // Actualizado con tu número real
+            const mensaje = encodeURIComponent(`¡Hola! Estoy interesado en el ${pack} para mi negocio. Me gustaría resolver algunas dudas.`);
+            window.open(`https://wa.me/${telefono}?text=${mensaje}`, '_blank');
         }
     </script>
 
